@@ -1,7 +1,6 @@
 node {
    stage('prebuild steps') {
       sh 'echo executing prebuild steps'
-      }
    }
    stage('setGitDetails') {
       checkout scm
@@ -13,7 +12,6 @@ node {
    }
    stage('build') {
          sh 'echo building...'
-      }
    }
    stage('TestDeploy') {
       sh 'echo deploy to test...'
